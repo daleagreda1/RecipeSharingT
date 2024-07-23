@@ -1,4 +1,3 @@
-import React from 'react';
 import LogoC from "../pics/LogoC.svg";
 import './homepage.css';
 
@@ -12,7 +11,7 @@ const Header = () => {
             <span className="ml-[1px] font-bold text-3xl">ookShares</span>
           </button>
         </div>
-        <nav className="flex flex-col md:flex-row md:space-x-10 w-full md:w-auto text-sm mb-4 md:mb-0 font-semibold">
+        <nav className="flex flex-col md:flex-row text-align-left md:space-x-28 w-full md:w-auto text-sm mb-4 md:mb-0 font-semibold">
           <a href="/" className="hover:text-gray-400 text-black">Home</a>
           <a href="/recipes" className="hover:text-gray-400 text-black">Recipes</a>
           <a href="/about" className="hover:text-gray-400 text-black">About us</a>

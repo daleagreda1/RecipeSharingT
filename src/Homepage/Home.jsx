@@ -1,5 +1,5 @@
 import './Home.css'
-import Header from '../Homepage/components/Header'
+import Header from '../Homepage/components/Header';
 import Hero from './components/Hero';
 
 function Home() {
