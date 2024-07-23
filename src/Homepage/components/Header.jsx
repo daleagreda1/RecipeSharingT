@@ -1,27 +1,29 @@
+import React from 'react';
 import LogoC from "../pics/LogoC.svg";
+import './homepage.css';
 
 const Header = () => {
   return (
-    <header className="bg-gray-200 text-white p-6 ">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center">
-        <button className="flex text-lg text-black">
-          <img className="logoheader w-6 ml-[-8px]" src={LogoC} alt="logoheader"/>
-          ookShares</button>
+    <header className="Headercontainer py-8 bg-gray-100 text-white p-6 drop-shadow-md">
+      <div className="container mx-auto flex flex-wrap justify-between items-center">
+        <div className="flex items-center w-full md:w-auto mb-4 md:mb-0">
+          <button href="/home" className="flex text-lg text-black drop-shadow-lg">
+            <img className="logoheader w-9" src={LogoC} alt="logoheader" />
+            <span className="ml-[1px] font-bold text-3xl">ookShares</span>
+          </button>
         </div>
-        <nav className="flex space-x-10 ml-[-10rem] text-sm">
+        <nav className="flex flex-col md:flex-row md:space-x-10 w-full md:w-auto text-sm mb-4 md:mb-0 font-semibold">
           <a href="/" className="hover:text-gray-400 text-black">Home</a>
           <a href="/recipes" className="hover:text-gray-400 text-black">Recipes</a>
-          <a href="/about" className="hover:text-gray-400 text-black">About Us</a>
+          <a href="/about" className="hover:text-gray-400 text-black">About us</a>
         </nav>
-        <div className="flex items-center space-x-4">
+        <div className="flex items-center w-full md:w-auto space-x-8 mb:flex-col">
           <input
             type="text"
             placeholder="Search"
-            className="p-1 rounded-full text-black"
-  
+            className="p-2 rounded-full text-black w-full md:w-auto"
           />
-          <button href="/SubmitRecipe" className="bg-green-600 text-sm p-1 rounded-full hover:bg-green-800">Share your Recipe!</button>
+          <button href="/SubmitRecipe" className="SubmitButtonHeader text-sm p-[10px] rounded-full hover:bg-green-800 w-auto md:w-auto"> Share your Recipe! </button>
         </div>
       </div>
     </header>

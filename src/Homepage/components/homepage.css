@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.SubmitButtonHeader{
+   background-color: #39DB4A;
+}
