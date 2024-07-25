@@ -1,9 +1,9 @@
-import Header from "./RecipeListpage/components/Header.jsx";
+import Header from '../../components/Header';
 
 const RecipeListpage = () => {
   return (
     <div>
-      <Header></Header>
+      RecipeListpage
     </div>
   );
 };

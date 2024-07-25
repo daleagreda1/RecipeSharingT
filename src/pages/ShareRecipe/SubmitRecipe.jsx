@@ -1,10 +1,10 @@
 import './SubmitRecipe.css'
-import Header from "./ShareRecipe/components/Header.jsx";
+import Header from '../../components/Header';
 
 const SubmitRecipe = () => {
   return (
     <div>
-      <Header></Header>
+      submitpagerecipe
     </div>
   )
 }

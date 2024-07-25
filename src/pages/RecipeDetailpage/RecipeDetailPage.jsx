@@ -1,9 +1,9 @@
-import Header from "./RecipeDetailPage/components/Header.jsx";
+import Header from "./RecipeDetailPage/components/Header.js";
 
 const RecipeDetailPage = () => {
   return (
     <div>
-      <Header></Header>
+      Detailpage
     </div>
   );
 };
