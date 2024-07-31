@@ -1,0 +1,297 @@
+{
+    "recipes": [
+        {   
+            "id" : 1,
+            "RecipeName": "Spaghetti Carbonara",
+            "Ingredients": [
+                "200g spaghetti",
+                "100g pancetta",
+                "2 large eggs",
+                "50g Pecorino cheese",
+                "50g Parmesan cheese",
+                "2 plump garlic cloves",
+                "50g unsalted butter",
+                "Salt and black pepper"
+            ],
+            "Author": "John Doe",
+            "Category": "Italian",
+            "Instructions": "1. Put a large saucepan of water on to boil. 2. Finely chop the pancetta, having first removed any rind. 3. Finely grate both cheeses and mix them together. 4. Beat the eggs in a medium bowl, season with a little freshly grated black pepper and set everything aside. 5. Add 1 tsp salt to the boiling water, add the spaghetti and when the water comes back to the boil, cook at a constant simmer, covered, for 10 minutes or until al dente. 6. Squash the garlic with the blade of a knife, just to bruise it. 7. While the spaghetti is cooking, fry the pancetta with the garlic. 8. Keep the heat hot enough for the pancetta to sizzle, but not so hot as to burn the garlic. 9. Remove the garlic from the pancetta pan and discard. 10. Keep the heat under the pancetta on low. 11. When the pasta is ready, lift it from the water with a pasta fork or tongs and put it in the frying pan with the pancetta. 12. Mix most of the cheese in with the eggs, keeping a small handful back for sprinkling over later. 13. Take the pan of spaghetti and pancetta off the heat. 14. Quickly pour in the eggs and cheese. 15. Use the tongs or a long fork to mix together, but do not stir it too much. 16. The heat from the spaghetti will cook the egg slightly, but not scramble it. 17. Serve immediately with a sprinkling of the remaining cheese and a grating of black pepper.",
+            "Image": "https://example.com/spaghetti-carbonara.jpg"
+        },
+        {   
+            "id" : 2,
+            "RecipeName": "Chicken Curry",
+            "Ingredients": [
+                "1kg chicken",
+                "2 onions",
+                "3 tomatoes",
+                "4 garlic cloves",
+                "1 piece of ginger",
+                "2 tbsp curry powder",
+                "400ml coconut milk",
+                "Salt and pepper",
+                "Cilantro for garnish"
+            ],
+            "Author": "Jane Smith",
+            "Category": "Indian",
+            "Instructions": "1. Cut the chicken into bite-sized pieces. 2. Finely chop the onions, tomatoes, garlic, and ginger. 3. Heat oil in a large pot over medium heat. 4. Add the onions and cook until golden brown. 5. Add the garlic and ginger and cook for another minute. 6. Stir in the curry powder and cook for another 2 minutes. 7. Add the chicken pieces and cook until they are browned. 8. Add the tomatoes and cook until they are soft. 9. Pour in the coconut milk and bring to a simmer. 10. Season with salt and pepper. 11. Cover the pot and cook for 30 minutes or until the chicken is fully cooked. 12. Garnish with cilantro and serve hot with rice or naan.",
+            "Image": "https://example.com/chicken-curry.jpg"
+        },
+        {   
+            "id" : 3,
+            "RecipeName": "Beef Tacos",
+            "Ingredients": [
+                "500g ground beef",
+                "1 onion",
+                "2 garlic cloves",
+                "1 packet taco seasoning",
+                "8 taco shells",
+                "1 cup shredded lettuce",
+                "1 cup diced tomatoes",
+                "1 cup shredded cheese",
+                "Sour cream and salsa for serving"
+            ],
+            "Author": "Maria Lopez",
+            "Category": "Mexican",
+            "Instructions": "1. Heat a large skillet over medium heat. 2. Add the ground beef and cook until browned. 3. Finely chop the onion and garlic, then add to the beef. 4. Cook until the onion is translucent. 5. Add the taco seasoning and water according to the packet instructions. 6. Simmer until the sauce thickens. 7. Warm the taco shells according to the package instructions. 8. Fill the taco shells with the beef mixture. 9. Top with lettuce, tomatoes, cheese, sour cream, and salsa. 10. Serve immediately.",
+            "Image": "https://example.com/beef-tacos.jpg"
+        },
+        {   
+            "id" : 4,
+            "RecipeName": "Vegetable Stir Fry",
+            "Ingredients": [
+                "2 tbsp vegetable oil",
+                "1 bell pepper",
+                "1 broccoli head",
+                "2 carrots",
+                "100g snap peas",
+                "2 garlic cloves",
+                "2 tbsp soy sauce",
+                "1 tbsp oyster sauce",
+                "1 tsp cornstarch",
+                "Salt and pepper"
+            ],
+            "Author": "Alex Johnson",
+            "Category": "Asian",
+            "Instructions": "1. Cut the bell pepper into strips, broccoli into florets, and carrots into thin slices. 2. Heat the vegetable oil in a large wok over high heat. 3. Add the garlic and cook for 30 seconds. 4. Add the bell pepper, broccoli, and carrots to the wok. 5. Stir fry for 5-7 minutes until vegetables are tender-crisp. 6. Add the snap peas and cook for another 2 minutes. 7. In a small bowl, mix the soy sauce, oyster sauce, cornstarch, and a little water. 8. Pour the sauce over the vegetables and stir well. 9. Cook for another 2-3 minutes until the sauce has thickened. 10. Season with salt and pepper to taste. 11. Serve hot with rice or noodles.",
+            "Image": "https://example.com/vegetable-stir-fry.jpg"
+        },
+        {   
+            "id" : 5,
+            "RecipeName": "Blueberry Muffins",
+            "Ingredients": [
+                "1 1/2 cups all-purpose flour",
+                "3/4 cup white sugar",
+                "1/2 tsp salt",
+                "2 tsp baking powder",
+                "1/3 cup vegetable oil",
+                "1 egg",
+                "1/3 cup milk",
+                "1 cup fresh blueberries"
+            ],
+            "Author": "Emma Brown",
+            "Category": "Dessert",
+            "Instructions": "1. Preheat the oven to 400°F (200°C). 2. Grease a muffin tin or line with paper muffin liners. 3. In a large bowl, mix the flour, sugar, salt, and baking powder. 4. In a separate bowl, beat together the oil, egg, and milk. 5. Stir the wet ingredients into the dry ingredients just until moistened. 6. Fold in the blueberries. 7. Fill muffin cups 2/3 full. 8. Bake for 20 to 25 minutes in the preheated oven, or until a toothpick inserted into the center of a muffin comes out clean. 9. Let cool in the pan for 10 minutes before removing to a wire rack to cool completely. 10. Serve warm or at room temperature.",
+            "Image": "https://example.com/blueberry-muffins.jpg"
+        },
+        {   
+            "id" : 6,
+            "RecipeName": "Caesar Salad",
+            "Ingredients": [
+                "2 romaine lettuce hearts",
+                "1/2 cup grated Parmesan cheese",
+                "1 cup croutons",
+                "1/2 cup Caesar dressing",
+                "1 lemon",
+                "Salt and pepper"
+            ],
+            "Author": "Sophia White",
+            "Category": "Salad",
+            "Instructions": "1. Wash and dry the romaine lettuce hearts. 2. Tear the lettuce into bite-sized pieces and place in a large bowl. 3. Add the grated Parmesan cheese and croutons. 4. Drizzle the Caesar dressing over the salad. 5. Toss the salad to coat the ingredients evenly with the dressing. 6. Squeeze the lemon juice over the salad. 7. Season with salt and pepper to taste. 8. Serve immediately.",
+            "Image": "https://example.com/caesar-salad.jpg"
+        },
+        {   
+            "id" : 7,
+            "RecipeName": "Chocolate Chip Cookies",
+            "Ingredients": [
+                "1 cup unsalted butter",
+                "1 cup white sugar",
+                "1 cup packed brown sugar",
+                "2 eggs",
+                "2 tsp vanilla extract",
+                "3 cups all-purpose flour",
+                "1 tsp baking soda",
+                "2 tsp hot water",
+                "1/2 tsp salt",
+                "2 cups semisweet chocolate chips"
+            ],
+            "Author": "Liam Green",
+            "Category": "Dessert",
+            "Instructions": "1. Preheat the oven to 350°F (175°C). 2. Cream together the butter, white sugar, and brown sugar until smooth. 3. Beat in the eggs one at a time, then stir in the vanilla. 4. Dissolve baking soda in hot water. Add to batter along with salt. 5. Stir in flour and chocolate chips. 6. Drop by large spoonfuls onto ungreased pans. 7. Bake for about 10 minutes in the preheated oven, or until edges are nicely browned. 8. Let cool on the baking sheet for a few minutes before transferring to wire racks to cool completely.",
+            "Image": "https://example.com/chocolate-chip-cookies.jpg"
+        },
+        {   
+            "id" : 8,
+            "RecipeName": "Greek Salad",
+            "Ingredients": [
+                "3 tomatoes",
+                "1 cucumber",
+                "1 green bell pepper",
+                "1 red onion",
+                "200g feta cheese",
+                "1/2 cup Kalamata olives",
+                "1/4 cup olive oil",
+                "1 tbsp red wine vinegar",
+                "1 tsp dried oregano",
+                "Salt and pepper"
+            ],
+            "Author": "Olivia Brown",
+            "Category": "Salad",
+            "Instructions": "1. Cut the tomatoes into wedges. 2. Peel and slice the cucumber. 3. Slice the green bell pepper into rings. 4. Thinly slice the red onion. 5. In a large bowl, combine the tomatoes, cucumber, bell pepper, red onion, feta cheese, and olives. 6. In a small bowl, whisk together the olive oil, red wine vinegar, and oregano. 7. Pour the dressing over the salad and toss gently to combine. 8. Season with salt and pepper to taste. 9. Serve immediately.",
+            "Image": "https://example.com/greek-salad.jpg"
+        },
+        {
+            "id" : 9,
+            "RecipeName": "Pancakes",
+            "Ingredients": [
+                "1 1/2 cups all-purpose flour",
+                "3 1/2 tsp baking powder",
+                "1 tsp salt",
+                "1 tbsp white sugar",
+                "1 1/4 cups milk",
+                "1 egg",
+                "3 tbsp butter, melted"
+            ],
+            "Author": "Ethan Williams",
+            "Category": "Breakfast",
+            "Instructions": "1. In a large bowl, sift together the flour, baking powder, salt, and sugar. 2. Make a well in the center and pour in the milk, egg, and melted butter; mix until smooth. 3. Heat a lightly oiled griddle or frying pan over medium-high heat. 4. Pour or scoop the batter onto the griddle, using approximately 1/4 cup for each pancake. 5. Brown on both sides and serve hot.",
+            "Image": "https://example.com/pancakes.jpg"
+        },
+        {
+            "id" : 10,
+            "RecipeName": "French Toast",
+            "Ingredients": [
+                "4 slices of bread",
+                "2 eggs",
+                "1/2 cup milk",
+                "1 tsp vanilla extract",
+                "1/2 tsp cinnamon",
+                "Butter for frying",
+                "Maple syrup for serving"
+            ],
+            "Author": "Charlotte Davis",
+            "Category": "Breakfast",
+            "Instructions": "1. In a shallow dish, whisk together the eggs, milk, vanilla extract, and cinnamon. 2. Heat a skillet over medium heat and add a bit of butter. 3. Dip each slice of bread into the egg mixture, coating both sides. 4. Place the bread in the skillet and cook until golden brown on both sides. 5. Serve hot with maple syrup.",
+            "Image": "https://example.com/french-toast.jpg"
+        },
+        {
+            "id" : 11,
+            "RecipeName": "Chicken Alfredo",
+            "Ingredients": [
+                "200g fettuccine pasta",
+                "2 chicken breasts",
+                "2 tbsp olive oil",
+                "2 garlic cloves",
+                "1 cup heavy cream",
+                "1 cup grated Parmesan cheese",
+                "Salt and pepper",
+                "Chopped parsley for garnish"
+            ],
+            "Author": "Noah Miller",
+            "Category": "Italian",
+            "Instructions": "1. Cook the fettuccine pasta according to package instructions. 2. Season the chicken breasts with salt and pepper. 3. Heat the olive oil in a large skillet over medium heat. 4. Cook the chicken until golden brown and fully cooked, then remove from the skillet. 5. In the same skillet, add the minced garlic and cook for 1 minute. 6. Add the heavy cream and bring to a simmer. 7. Stir in the grated Parmesan cheese until the sauce thickens. 8. Slice the cooked chicken and add it to the sauce. 9. Toss the cooked fettuccine in the sauce until well coated. 10. Garnish with chopped parsley and serve immediately.",
+            "Image": "https://example.com/chicken-alfredo.jpg"
+        },
+        {
+            "id" : 12,
+            "RecipeName": "Mango Smoothie",
+            "Ingredients": [
+                "1 cup fresh mango chunks",
+                "1 banana",
+                "1/2 cup Greek yogurt",
+                "1/2 cup orange juice",
+                "1 tbsp honey",
+                "Ice cubes"
+            ],
+            "Author": "Mia Anderson",
+            "Category": "Beverage",
+            "Instructions": "1. Place the mango chunks, banana, Greek yogurt, orange juice, and honey in a blender. 2. Blend until smooth. 3. Add ice cubes and blend until well combined. 4. Pour into a glass and serve immediately.",
+            "Image": "https://example.com/mango-smoothie.jpg"
+        },
+        {
+            "id" : 13,
+            "RecipeName": "Vegetable Soup",
+            "Ingredients": [
+                "2 tbsp olive oil",
+                "1 onion",
+                "2 carrots",
+                "2 celery stalks",
+                "2 garlic cloves",
+                "1 zucchini",
+                "1 can diced tomatoes",
+                "4 cups vegetable broth",
+                "1 tsp dried basil",
+                "Salt and pepper"
+            ],
+            "Author": "Jacob Martinez",
+            "Category": "Soup",
+            "Instructions": "1. Heat the olive oil in a large pot over medium heat. 2. Add the chopped onion, carrots, and celery, and cook until softened. 3. Add the minced garlic and cook for 1 minute. 4. Stir in the chopped zucchini and cook for another 2 minutes. 5. Add the diced tomatoes, vegetable broth, and dried basil. 6. Bring to a boil, then reduce heat and simmer for 20 minutes. 7. Season with salt and pepper to taste. 8. Serve hot.",
+            "Image": "https://example.com/vegetable-soup.jpg"
+        },
+        {
+            "id" : 14,
+            "RecipeName": "BBQ Ribs",
+            "Ingredients": [
+                "1 rack of pork ribs",
+                "2 tbsp brown sugar",
+                "1 tbsp paprika",
+                "1 tsp black pepper",
+                "1 tsp salt",
+                "1 tsp garlic powder",
+                "1/2 tsp onion powder",
+                "1/2 tsp cayenne pepper",
+                "1 cup BBQ sauce"
+            ],
+            "Author": "William Clark",
+            "Category": "BBQ",
+            "Instructions": "1. Preheat the oven to 300°F (150°C). 2. In a small bowl, mix together the brown sugar, paprika, black pepper, salt, garlic powder, onion powder, and cayenne pepper. 3. Rub the spice mixture all over the ribs. 4. Place the ribs on a baking sheet and cover with aluminum foil. 5. Bake for 2 1/2 to 3 hours, until the ribs are tender. 6. Remove the ribs from the oven and brush with BBQ sauce. 7. Preheat the grill to medium-high heat. 8. Grill the ribs for 5-10 minutes, until the BBQ sauce is caramelized. 9. Serve hot.",
+            "Image": "https://example.com/bbq-ribs.jpg"
+        },
+        {
+            "id" : 14,
+            "RecipeName": "Shrimp Scampi",
+            "Ingredients": [
+                "200g shrimp, peeled and deveined",
+                "4 garlic cloves",
+                "1/4 cup white wine",
+                "1/4 cup lemon juice",
+                "1/2 cup butter",
+                "1/4 cup chopped parsley",
+                "Salt and pepper",
+                "Cooked pasta for serving"
+            ],
+            "Author": "Isabella Walker",
+            "Category": "Seafood",
+            "Instructions": "1. In a large skillet, melt the butter over medium heat. 2. Add the minced garlic and cook for 1 minute. 3. Add the shrimp and cook until pink and opaque. 4. Pour in the white wine and lemon juice, and bring to a simmer. 5. Season with salt and pepper. 6. Stir in the chopped parsley. 7. Serve the shrimp scampi over cooked pasta.",
+            "Image": "https://example.com/shrimp-scampi.jpg"
+        },
+        {
+            "id" : 15,
+            "RecipeName": "Apple Pie",
+            "Ingredients": [
+                "1 pastry for a 9-inch double crust pie",
+                "6 cups thinly sliced apples",
+                "3/4 cup white sugar",
+                "1 tsp ground cinnamon",
+                "1/4 tsp ground nutmeg",
+                "2 tbsp all-purpose flour",
+                "1 tbsp lemon juice",
+                "1 tbsp butter"
+            ],
+            "Author": "Lucas Hernandez",
+            "Category": "Dessert",
+            "Instructions": "1. Preheat the oven to 425°F (220°C). 2. In a large bowl, mix together the sliced apples, sugar, cinnamon, nutmeg, flour, and lemon juice. 3. Roll out half of the pastry and place in a 9-inch pie plate. 4. Fill with the apple mixture and dot with butter. 5. Roll out the remaining pastry and place over the filling. 6. Trim and crimp the edges to seal. 7. Cut a few slits in the top crust to allow steam to escape. 8. Bake for 45 to 50 minutes, until the crust is golden brown. 9. Let cool before serving.",
+            "Image": "https://example.com/apple-pie.jpg"
+        }
+    ]
+}

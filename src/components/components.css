@@ -10,8 +10,22 @@
 
 .btnsee{
    background-color: #39DB4A;
+   border-color: #39DB4A;
 }
 
 .heroright{
    background-color: #39DB4A;
+}
+
+.footerbg{
+   background-color: #F2F1F1;
+}
+
+.aboutussign {
+   background: #39DB4A;
+}
+
+.foodhero{
+   width:   9800px;
+   height: 580px;
 }

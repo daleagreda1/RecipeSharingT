@@ -1,7 +1,8 @@
 import Header from '../../components/Header';
 import Hero from '../../components/Hero';
 import AboutUs from '../../components/AboutUs';
-
+import Footer from '../../components/Footer';
+import CategoryHero from "../../components/CategoriesHero";
 
 
 function Home() {
@@ -9,7 +10,10 @@ function Home() {
   return (
       <div>
       <Hero></Hero>
-      <div id='#About-Us'><AboutUs/>
+      <CategoryHero/>
+      <div id="About-Us"><AboutUs/>
+      </div>
+      <div id="Footer"><Footer/>
       </div>
     </div>
   );

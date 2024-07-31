@@ -14,17 +14,13 @@ const Header = () => {
         <nav className="flex flex-col md:flex-row text-align-left md:space-x-28 w-full md:w-auto text-sm mb-4 md:mb-0 font-semibold">
           <a href="/" className="hover:text-gray-400 text-black">Home</a>
           <a href="/RecipeListpage" className="hover:text-gray-400 text-black">Recipes</a>
-          <a href='#About-Us' className="hover:text-gray-400 text-black">About us</a>
+          <a href='/#About-Us' className="hover:text-gray-400 text-black">About us</a>
+          <a href='/#Footer' className="hover:text-gray-400 text-black">Contact Us</a>
         </nav>
         <div className="flex items-center w-full md:w-auto space-x-8 mb:flex-col">
-        <a>
-          <input
-            type="text"
-            placeholder="Search"
-            className="p-2 rounded-full text-black w-full md:w-auto"
-          />
-        </a>  
-          <a href="/SubmitRecipe">
+        <div>
+        </div>
+          <a href="/SubmitRecipe" target='_blank'>
           <button className="SubmitButtonHeader text-sm p-[10px] rounded-full hover:bg-green-800 w-auto md:w-auto"> Share your Recipe! </button>
           </a>
         </div>

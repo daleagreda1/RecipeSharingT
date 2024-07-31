@@ -1,8 +1,9 @@
 import React, { useCallback, useState } from 'react';
 import { useDropzone } from 'react-dropzone';
+import axios from 'axios'; // For HTTP requests
 import './SubmitRecipe.css';
 
-const SubmitRecipe = () => {
+const NewRecipe = () => {
     const [recipe, setRecipe] = useState({
         RecipeName: '',
         Ingredients: [],
@@ -41,45 +42,49 @@ const SubmitRecipe = () => {
         }
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Create a new recipe object
-        const newRecipe = {
-            RecipeName: recipe.RecipeName,
-            Ingredients: recipe.Ingredients,
-            Author: recipe.Author,
-            Category: recipe.Category,
-            Instructions: recipe.Instructions,
-            Image: image ? URL.createObjectURL(image) : '', // Create a URL for the image
-        };
+        // Prepare form data
+        const formData = new FormData();
+        formData.append('RecipeName', recipe.RecipeName);
+        formData.append('Ingredients', JSON.stringify(recipe.Ingredients));
+        formData.append('Author', recipe.Author);
+        formData.append('Category', recipe.Category);
+        formData.append('Instructions', recipe.Instructions);
+        if (image) {
+            formData.append('Image', image);
+        }
 
-        // Get existing recipes from local storage
-        const recipes = JSON.parse(localStorage.getItem('recipes.json')) || [];
-        
-        // Add new recipe to the list
-        recipes.push(newRecipe);
-        
-        // Save updated list to local storage
-        localStorage.setItem('recipes', JSON.stringify(recipes));
-        
-        // Clear form
-        setRecipe({
-            RecipeName: '',
-            Ingredients: [],
-            Author: '',
-            Category: '',
-            Instructions: '',
-        });
-        setImage(null);
+        try {
+            const response = await axios.post('http://localhost:5174/api/recipes', formData, {
+                headers: {
+                    'Content-Type': 'multipart/form-data',
+                },
+            });
 
-        alert('Recipe submitted successfully!');
+            if (response.status === 200) {
+                alert('Recipe submitted successfully!');
+                setRecipe({
+                    RecipeName: '',
+                    Ingredients: [],
+                    Author: '',
+                    Category: '',
+                    Instructions: '',
+                });
+                setImage(null);
+            }
+        } catch (error) {
+            console.error('Error submitting recipe:', error);
+            alert('Failed to submit recipe. Please try again.');
+        }
     };
 
     return (
         <div className="containersubmit mx-auto mt-10 p-10 px-40 bg-white rounded shadow">
             <h1 className="text-xl font-bold mb-5">Submit New Recipe!</h1>
             <form onSubmit={handleSubmit}>
+                {/* Form fields */}
                 <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="recipeName">
                         Recipe Name
@@ -190,4 +195,4 @@ const SubmitRecipe = () => {
     );
 };
 
-export default SubmitRecipe;
+export default NewRecipe;
