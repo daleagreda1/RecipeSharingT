@@ -4,7 +4,7 @@ import bgabout from '../assets/pics/bgabout.jpg';
 
 const AboutUs = () => {
   return (
-    <div className="flex flex-col gap-8 py-40">
+    <div className="flex flex-col gap-8 py-20">
       <div className="relative h-60 bg-cover bg-center bg-no-repeat flex items-center justify-center about-us-bg"
           style={{ backgroundImage: `url(${bgabout})` }}>
         <p className="text-white text-7xl font-bold absolute z-10" style={{ fontFamily: 'Poppins, sans-serif' }}>About Us</p>
@@ -13,7 +13,7 @@ const AboutUs = () => {
       <div className="flex flex-col gap-16 justify-center items-center py-20 bg-white px-4 md:px-20">
         <div className="w-full max-w-5xl flex flex-col md:flex-row gap-10 justify-center items-center text-lg md:text-xl text-gray-800 leading-relaxed" style={{ fontFamily: 'Roboto, sans-serif' }}>
           <p className="flex-1">
-           <a className="text-3xl font-bold text-green-600">Welcome to CookShares</a> , the ultimate food lover's paradise where everyone is invited to share their culinary creations! 
+           <a className="text-3xl font-bold text-green-700">Welcome to CookShares</a>, the ultimate food lover's paradise where everyone is invited to share their culinary creations! 
             CookShares is a vibrant community-driven platform dedicated to bringing together passionate home cooks, professional chefs, 
             and food enthusiasts from all corners of the world. Whether you have a cherished family recipe, a modern twist on a classic dish, 
             or an innovative fusion cuisine, CookShares is the perfect place to showcase your culinary skills.
@@ -46,17 +46,17 @@ const AboutUs = () => {
           <div className="flex flex-wrap justify-center gap-10">
             <div className="flex flex-col items-center">
               <img src=""/>
-              <p className="mt-4 text-xl font-semibold">Mia Kulafa</p>
+              <p className="mt-4 text-xl font-semibold">Carl Gabriel Piramo</p>
               <p className="text-gray-600">Founder & Chef</p>
             </div>
             <div className="flex flex-col items-center">
               <img src=""/> 
-              <p className="mt-4 text-xl font-semibold">Johnny Sense</p>
+              <p className="mt-4 text-xl font-semibold">Dale Anthony Agreda</p>
               <p className="text-gray-600">Co-Founder & Pastry Chef</p>
             </div>
             <div className="flex flex-col items-center">
               <img src=""/>
-              <p className="mt-4 text-xl font-semibold">elon musk</p>
+              <p className="mt-4 text-xl font-semibold">Gordon Ramsay</p>
               <p className="text-gray-600">Community Manager</p>
             </div>
           </div>
