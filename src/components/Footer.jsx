@@ -15,7 +15,7 @@ const Footer = () => {
       <div className="flex flex-wrap md:flex-nowrap justify-between items-start gap-8 md:gap-16">
         <div className="flex flex-col items-start gap-6 md:gap-8 w-full md:w-1/3">
           <div className="flex items-center">
-            <img className="w-9" src={LogoC} alt="logoheader" />
+            <img className="w-9 pt-2" src={LogoC} alt="logoheader" />
             <a href="/" className="font-bold text-3xl text-black">ookShares</a>
           </div>
           <p className="text-neutral-400 text-md font-normal w-full leading-normal">
@@ -24,16 +24,16 @@ const Footer = () => {
             Join our community and get inspired by unique recipes that tell a story in every bite!
           </p>
           <div className="flex gap-4">
-            <a href="#" className="w-10 h-10 bg-white rounded-full flex justify-center items-center">
+            <a href="#" className="w-10 h-10 bg-white rounded-full flex justify-center items-center transition-transform duration-300 hover:scale-105">
               <img src={facebooklogo} alt="Facebook" className="w-4 h-4" />
             </a>
-            <a href="#" className="w-10 h-10 bg-white rounded-full flex justify-center items-center">
+            <a href="#" className="w-10 h-10 bg-white rounded-full flex justify-center items-center transition-transform duration-300 hover:scale-105">
               <img src={twitter} alt="Twitter" className="w-4 h-4" />
             </a>
-            <a href="#" className="w-10 h-10 bg-white rounded-full flex justify-center items-center">
+            <a href="#" className="w-10 h-10 bg-white rounded-full flex justify-center items-center transition-transform duration-300 hover:scale-105">
               <img src={linkeddin} alt="LinkedIn" className="w-4 h-4" />
             </a>
-            <a href="#" className="w-10 h-10 bg-white rounded-full flex justify-center items-center">
+            <a href="#" className="w-10 h-10 bg-white rounded-full flex justify-center items-center transition-transform duration-300 hover:scale-105">
               <img src={insta} alt="Instagram" className="w-4 h-4" />
             </a>
           </div>
@@ -68,7 +68,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <p className="text-gray-500 w-full text-center">Copyright ⓒ 2024 Dscode | All rights reserved</p>
+      <p className="text-gray-400 w-full text-center mt-[-20px]">Copyright ⓒ 2024 Dscode | All rights reserved</p>
     </div>
   );
 };

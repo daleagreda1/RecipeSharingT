@@ -11,7 +11,7 @@ const Hero = () => {
             <a className="text-green-700">Welcome to CookShares!</a> Where every recipe is unique.
           </p>
           <div className="pt-1">
-            <h2 className="font-bold text-lg md:text-3xl lg:text-4xl text-green-900">
+          <h2 className="font-bold text-lg md:text-3xl lg:text-4xl text-green-900">
               Discover and share amazing recipes.
             </h2>
             <h3 className="w-full md:w-[44rem] font-semibold pt-4 text-gray-500 text-md">
@@ -21,10 +21,10 @@ const Hero = () => {
           </div>
           <div className="flex justify-center md:justify-start pt-4">
             <a href="/RecipeListpage" target='_blank'>
-              <button className="btnsee rounded-full font-semibold w-32 h-12 text-sm text-white shadow-md hover:bg-white hover:text-green-500 transition-colors duration-200">
+              <button className="btnsee rounded-full font-semibold border-2 w-32 h-12 text-sm text-white shadow-md hover:bg-white hover:text-green-500 transition-transform duration-300 hover:scale-105">
                 See Recipes
               </button>
-            </a>
+            </a>           
           </div>
         </div>
         <div className="heroright w-250px h-full flex flex-col justify-center rounded-xl items-center text-center md:h-[40rem] md:w-[60rem] md:px-8 mt-[80px]">

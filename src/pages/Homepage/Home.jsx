@@ -13,8 +13,6 @@ function Home() {
       <CategoryHero/>
       <div id="About-Us"><AboutUs/>
       </div>
-      <div id="Footer"><Footer/>
-      </div>
     </div>
   );
 };

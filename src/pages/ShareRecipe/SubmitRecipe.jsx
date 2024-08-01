@@ -71,15 +71,12 @@ const SubmitRecipe = () => {
     };
 
     return (
-        <div className="containersubmit mx-auto mt-10 p-10 px-40 bg-white rounded shadow">
-            <h1 className="text-xl font-bold mb-5">Submit New Recipe!</h1>
+        <div className="max-w-2xl mx-auto mt-10 mb-20 p-8 bg-white rounded-lg shadow-lg">
+            <h1 className="text-4xl font-bold mb-6 text-center text-green-700">Submit New Recipe!</h1>
             <form onSubmit={handleSubmit}>
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="recipeName">
-                        Recipe Name
-                    </label>
+                    <label htmlFor="recipeName" className="block text-gray-700 text-sm font-bold mb-2">Recipe Name</label>
                     <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="recipeName"
                         name="RecipeName"
                         type="text"
@@ -87,39 +84,37 @@ const SubmitRecipe = () => {
                         onChange={handleInputChange}
                         placeholder="Enter Recipe Name"
                         required
+                        className="w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500"
                     />
                 </div>
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="ingredients">
-                        Ingredients
-                    </label>
-                    <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                        id="ingredients"
-                        type="text"
-                        value={ingredient}
-                        onChange={handleIngredientChange}
-                        placeholder="Enter Ingredient"
-                    />
-                    <button
-                        type="button"
-                        onClick={handleAddIngredient}
-                        className="bg-blue-500 text-white px-4 py-2 rounded mt-2"
-                    >
-                        Add Ingredient
-                    </button>
-                    <ul className="list-disc pl-5 mt-2">
+                    <label htmlFor="ingredients" className="block text-gray-700 text-sm font-bold mb-2">Ingredients</label>
+                    <div className="flex">
+                        <input
+                            id="ingredients"
+                            type="text"
+                            value={ingredient}
+                            onChange={handleIngredientChange}
+                            placeholder="Enter Ingredient"
+                            className="w-full border rounded-l py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500"
+                        />
+                        <button
+                            type="button"
+                            onClick={handleAddIngredient}
+                            className="bg-green-500 text-white px-4 py-2 rounded-r focus:outline-none focus:ring-2 focus:ring-green-500"
+                        >
+                            Add
+                        </button>
+                    </div>
+                    <ul className="list-disc pl-5 mt-2 text-gray-700">
                         {recipe.Ingredients.map((ing, index) => (
-                            <li key={index} className="text-gray-700">{ing}</li>
+                            <li key={index}>{ing}</li>
                         ))}
                     </ul>
                 </div>
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="author">
-                        Author
-                    </label>
+                    <label htmlFor="author" className="block text-gray-700 text-sm font-bold mb-2">Author</label>
                     <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="author"
                         name="Author"
                         type="text"
@@ -127,14 +122,12 @@ const SubmitRecipe = () => {
                         onChange={handleInputChange}
                         placeholder="Enter Author Name"
                         required
+                        className="w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500"
                     />
                 </div>
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="category">
-                        Category
-                    </label>
+                    <label htmlFor="category" className="block text-gray-700 text-sm font-bold mb-2">Category</label>
                     <input
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="category"
                         name="Category"
                         type="text"
@@ -142,39 +135,36 @@ const SubmitRecipe = () => {
                         onChange={handleInputChange}
                         placeholder="Enter Category"
                         required
+                        className="w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500"
                     />
                 </div>
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="instructions">
-                        Instructions
-                    </label>
+                    <label htmlFor="instructions" className="block text-gray-700 text-sm font-bold mb-2">Instructions</label>
                     <textarea
-                        className="shadow appearance-none border rounded w-full py-6 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                         id="instructions"
                         name="Instructions"
                         value={recipe.Instructions}
                         onChange={handleInputChange}
                         placeholder="Enter Instructions"
                         required
+                        className="w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500"
                     ></textarea>
                 </div>
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2">
-                        Recipe Image
-                    </label>
-                    <div {...getRootProps()} className="border-dashed border-2 hover:border-black bg-gray-200 hover:bg-gray-400 border-gray-500 cursor-pointer rounded p-6 text-center">
+                    <label className="block text-gray-700 text-sm font-bold mb-2">Recipe Image</label>
+                    <div {...getRootProps()} className="border-dashed border-2 bg-gray-200 hover:bg-gray-300 border-gray-500 cursor-pointer rounded p-6 text-center">
                         <input {...getInputProps()} />
                         {
                             isDragActive ?
                                 <p>Drop the files here...</p> :
-                                <p>Drag 'n' drop some files here, or click to select files</p>
+                                <p>Drag 'n' drop an image here, or click to select an image</p>
                         }
                     </div>
                 </div>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-center">
                     <button
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="submit"
+                        className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
                     >
                         Submit Recipe
                     </button>
