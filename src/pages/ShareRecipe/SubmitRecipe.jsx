@@ -31,6 +31,13 @@ const SubmitRecipe = () => {
         setIngredient(e.target.value);
     };
 
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            handleAddIngredient();
+        }
+    };
+
     const handleAddIngredient = () => {
         if (ingredient.trim() !== '') {
             setRecipe((prevRecipe) => ({
@@ -95,13 +102,14 @@ const SubmitRecipe = () => {
                             type="text"
                             value={ingredient}
                             onChange={handleIngredientChange}
+                            onKeyDown={handleKeyDown}
                             placeholder="Enter Ingredient"
                             className="w-full border rounded-l py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500"
                         />
                         <button
                             type="button"
                             onClick={handleAddIngredient}
-                            className="bg-green-500 text-white px-4 py-2 rounded-r focus:outline-none focus:ring-2 focus:ring-green-500"
+                            className="bg-green-500 text-white px-4 py-2 rounded-r focus:outline-none focus:ring-2 focus:ring-green-500  transition-transform duration-300 hover:scale-105"
                         >
                             Add
                         </button>
@@ -147,12 +155,12 @@ const SubmitRecipe = () => {
                         onChange={handleInputChange}
                         placeholder="Enter Instructions"
                         required
-                        className="w-full border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500"
+                        className="w-full border rounded py-6 px-3 text-gray-700 leading-tight focus:outline-none focus:ring-2 focus:ring-green-500"
                     ></textarea>
                 </div>
                 <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2">Recipe Image</label>
-                    <div {...getRootProps()} className="border-dashed border-2 bg-gray-200 hover:bg-gray-300 border-gray-500 cursor-pointer rounded p-6 text-center">
+                    <div {...getRootProps()} className="border-dashed border-2 bg-gray-200 hover:bg-gray-300 border-gray-500 cursor-pointer rounded p-6 text-center  transition-transform duration-300 hover:scale-105">
                         <input {...getInputProps()} />
                         {
                             isDragActive ?
@@ -164,7 +172,7 @@ const SubmitRecipe = () => {
                 <div className="flex items-center justify-center">
                     <button
                         type="submit"
-                        className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-green-500"
+                        className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-green-500  transition-transform duration-300 hover:scale-105"
                     >
                         Submit Recipe
                     </button>

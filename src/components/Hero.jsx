@@ -7,11 +7,11 @@ const Hero = () => {
     <div className="container mx-auto px-4 md:px-8 lg:px-4">
       <div className="flex flex-wrap md:flex-nowrap gap-8 md:gap-16">
         <div className="md:py-28 flex flex-col gap-8 md:gap-10 md:w-2/3">
-          <p className="font-bold text-2xl md:text-6xl lg:text-7xl drop-shadow-2xl">
+          <p className="font-bold text-5xl pt-8 md:text-6xl lg:text-7xl drop-shadow-2xl">
             <a className="text-green-700">Welcome to CookShares!</a> Where every recipe is unique.
           </p>
-          <div className="pt-1">
-          <h2 className="font-bold text-lg md:text-3xl lg:text-4xl text-green-900">
+          <div className="pt-2">
+          <h2 className="font-bold text-lg md:text-3xl lg:text-4xl text-black">
               Discover and share amazing recipes.
             </h2>
             <h3 className="w-full md:w-[44rem] font-semibold pt-4 text-gray-500 text-md">

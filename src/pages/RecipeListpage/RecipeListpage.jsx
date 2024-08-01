@@ -36,7 +36,7 @@ const RecipeList = () => {
     <div className="p-4 sm:p-6 md:p-8 lg:p-10 xl:p-12">
       <h1 className="text-3xl font-bold mb-8 text-center">Recipe List</h1>
 
-      <div className="flex flex-col md:flex-row md:gap-x-4 items-center mb-6">
+      <div className="flex flex-col md:flex-row md:gap-x-4 items-center mb-6 px-[12rem]">
         <div className="flex flex-col md:flex-row gap-4 items-center mb-4 md:mb-0">
           <label htmlFor="category" className="block text-lg font-medium mb-2 md:mb-0">Filter by Category:</label>
           <select
