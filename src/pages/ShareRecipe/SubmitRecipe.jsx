@@ -13,7 +13,7 @@ const SubmitRecipe = () => {
     const [ingredient, setIngredient] = useState('');
     const [image, setImage] = useState(null);
 
-    const onDrop = useCallback(acceptedFiles => {
+    const onDrop = useCallback((acceptedFiles) => {
         setImage(acceptedFiles[0]);
     }, []);
 
@@ -44,26 +44,20 @@ const SubmitRecipe = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Create a new recipe object
         const newRecipe = {
+            id: Math.floor(Math.random() * 10000),
             RecipeName: recipe.RecipeName,
             Ingredients: recipe.Ingredients,
             Author: recipe.Author,
             Category: recipe.Category,
             Instructions: recipe.Instructions,
-            Image: image ? URL.createObjectURL(image) : '', // Create a URL for the image
+            Image: image ? URL.createObjectURL(image) : '',
         };
 
-        // Get existing recipes from local storage
-        const recipes = JSON.parse(localStorage.getItem('recipes.json')) || [];
-        
-        // Add new recipe to the list
+        const recipes = JSON.parse(localStorage.getItem('recipes')) || [];
         recipes.push(newRecipe);
-        
-        // Save updated list to local storage
         localStorage.setItem('recipes', JSON.stringify(recipes));
-        
-        // Clear form
+
         setRecipe({
             RecipeName: '',
             Ingredients: [],
@@ -84,14 +78,14 @@ const SubmitRecipe = () => {
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="recipeName">
                         Recipe Name
                     </label>
-                    <input 
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
-                        id="recipeName" 
+                    <input
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="recipeName"
                         name="RecipeName"
-                        type="text" 
+                        type="text"
                         value={recipe.RecipeName}
                         onChange={handleInputChange}
-                        placeholder="Enter Recipe Name" 
+                        placeholder="Enter Recipe Name"
                         required
                     />
                 </div>
@@ -99,13 +93,13 @@ const SubmitRecipe = () => {
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="ingredients">
                         Ingredients
                     </label>
-                    <input 
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
-                        id="ingredients" 
-                        type="text" 
+                    <input
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="ingredients"
+                        type="text"
                         value={ingredient}
                         onChange={handleIngredientChange}
-                        placeholder="Enter Ingredient" 
+                        placeholder="Enter Ingredient"
                     />
                     <button
                         type="button"
@@ -124,14 +118,14 @@ const SubmitRecipe = () => {
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="author">
                         Author
                     </label>
-                    <input 
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
-                        id="author" 
+                    <input
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="author"
                         name="Author"
-                        type="text" 
+                        type="text"
                         value={recipe.Author}
                         onChange={handleInputChange}
-                        placeholder="Enter Author Name" 
+                        placeholder="Enter Author Name"
                         required
                     />
                 </div>
@@ -139,14 +133,14 @@ const SubmitRecipe = () => {
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="category">
                         Category
                     </label>
-                    <input 
-                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
-                        id="category" 
+                    <input
+                        className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="category"
                         name="Category"
-                        type="text" 
+                        type="text"
                         value={recipe.Category}
                         onChange={handleInputChange}
-                        placeholder="Enter Category" 
+                        placeholder="Enter Category"
                         required
                     />
                 </div>
@@ -154,13 +148,13 @@ const SubmitRecipe = () => {
                     <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="instructions">
                         Instructions
                     </label>
-                    <textarea 
-                        className="shadow appearance-none border rounded w-full py-6 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" 
-                        id="instructions" 
+                    <textarea
+                        className="shadow appearance-none border rounded w-full py-6 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+                        id="instructions"
                         name="Instructions"
                         value={recipe.Instructions}
                         onChange={handleInputChange}
-                        placeholder="Enter Instructions" 
+                        placeholder="Enter Instructions"
                         required
                     ></textarea>
                 </div>
@@ -178,8 +172,8 @@ const SubmitRecipe = () => {
                     </div>
                 </div>
                 <div className="flex items-center justify-between">
-                    <button 
-                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" 
+                    <button
+                        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
                         type="submit"
                     >
                         Submit Recipe

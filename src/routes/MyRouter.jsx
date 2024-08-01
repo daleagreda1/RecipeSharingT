@@ -14,6 +14,8 @@ export default function MyRouter() {
         <Route path='/RecipeListpage' element={<RecipeListpage/>}/>
         <Route path="/recipe/:name" element={<RecipeDetailPage />} />
         <Route path='/SubmitRecipe' element={<SubmitRecipe/>}/>
+       
+        
       </Route>
     </Routes>
   )

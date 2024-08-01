@@ -12,7 +12,7 @@ const CategoriesHero = () => {
     <div className="bg-gray-100 py-60">
       <div className="container mx-auto px-8">
         <div className="text-center mb-10">
-          <h1 className="text-4xl font-bold mb-10">Discover Our Recipes</h1>
+          <h1 className="text-5xl font-extrabold text-green-700 mb-5">Discover Our Recipes</h1>
           <p className="text-lg text-gray-600">Explore recipes by categories and find your favorite dishes!</p>
         </div>
         <div className="flex flex-wrap justify-center gap-6">

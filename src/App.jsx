@@ -9,6 +9,7 @@ export default function App() {
     <div> 
     <Header/>
     <Outlet/>
+    
     </div>
   )
 }

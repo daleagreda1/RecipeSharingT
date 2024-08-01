@@ -46,7 +46,6 @@ const Footer = () => {
               <li><a href="#">Recipes</a></li>
               <li><a href="#">About Us</a></li>
               <li><a href="#">Contact Us</a></li>
-              <li><a href="#">Search Recipe</a></li>
               <li><a href="#">Submit Recipe</a></li>
             </ul>
           </div>
@@ -55,7 +54,7 @@ const Footer = () => {
             <ul className="mt-4 space-y-4 text-neutral-400">
               <li className="flex items-center">
                 <img src={phone} alt="Phone" className="w-6 h-6 mr-2" />
-                (63+) 91-416-9352
+                (63+) 991-416-9352
               </li>
               <li className="flex items-center">
                 <img src={email} alt="Email" className="w-6 h-6 mr-2" />
@@ -69,6 +68,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <p className="text-gray-500 w-full text-center">Copyright ⓒ 2024 Dscode | All rights reserved</p>
     </div>
   );
 };
